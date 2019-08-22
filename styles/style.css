@@ -67,7 +67,7 @@ nav li a:hover {
   padding: 0;
   width: 100%;
   align-self: center;
-  height: 1700px;
+  /* height: 1700px; */
   align-items: center;
   position: relative;
   display: flex;
@@ -77,20 +77,20 @@ nav li a:hover {
 
 #main .intro {
   /* background-color: rgba(255, 255, 255, 0.7); */
+  /* height: 1000px; */
   background-color: whitesmoke;
-  box-shadow: 1px 0px 5px 0px rgb(185, 185, 185);
+  /* box-shadow: 1px 0px 5px 0px rgb(185, 185, 185); */
   align-self: center;
-  /* height: 500px; */
   width: 90%;
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-around;
-  border-radius: 2px;
   border-bottom: 1px solid gray;
   border-width: 1px;
 }
-#main img {
+#main .selfie {
+  order: 1;
   flex: 0;
   width: 200px;
   margin: 10px 0 0 0;
@@ -99,10 +99,10 @@ nav li a:hover {
 }
 .introductionWarrper {
   align-self: center;
-  margin: 0 0 0 20px;
+  margin: 300px 0 300px 0px;
 }
 
-.introductionWarrper h1 {
+.introductionWarrper > h1 {
   text-align: center;
   font-size: 60px;
   font-weight: lighter;
@@ -112,22 +112,65 @@ nav li a:hover {
   color: rgb(151, 151, 151);
 }
 #projectSection {
-  background-color: whitesmoke;
+  background-color: white;
   /* box-shadow: 1px 0px 5px 0px rgb(185, 185, 185); */
-  display: flex;
+  /* height: 10000px; */
   flex: 1;
+  display: flex;
   align-self: center;
   flex-direction: column;
   align-items: center;
-  display: flex;
   width: 90%;
 }
 
-#projectSection h1 {
-  padding: 63px;
+#projectSection > h1 {
+  margin: 65px 0 65px 0;
   font-size: 50px;
   font-weight: lighter;
-  flex: 1;
+  /* flex: 1; */
+}
+#projectSection .project {
+  padding: 0;
+  width: 100%;
+  /* flex: 1; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#projectSection .project .project1 {
+  border-top: 3px solid #eeeeee;
+  border-right: 3px solid #eeeeee;
+  padding: 4rem;
+  flex: 33.3%;
+  text-align: center;
+}
+
+#projectSection .project .project2 {
+  border-top: 3px solid #eeeeee;
+  padding: 4rem;
+  flex: 33.3%;
+  text-align: center;
+}
+
+#projectSection .project .project3 {
+  border-top: 3px solid #eeeeee;
+  border-right: 3px solid #eeeeee;
+  padding: 4rem;
+  flex: 33.3%;
+  text-align: center;
+}
+
+#projectSection .project .project4 {
+  border-top: 3px solid #eeeeee;
+  padding: 4rem;
+  flex: 33.3%;
+  text-align: center;
+}
+
+#projectSection .projectImg {
+  margin : 30px 0 30px 0;
+  width: 100%;
 }
 
 /* footer */
@@ -136,35 +179,49 @@ footer {
   /* width: 100%; */
   flex: 1;
   display: flex;
-  height: 500px;
+  /* height: 500px; */
   justify-content: center;
   flex-direction: column;
   align-items: center;
   position: relative;
   /* top: 5000px; */
 }
-footer .footerWarrper {
+footer {
   width: 100%;
   flex: 1;
   display: flex;
   /* width: 100%; */
   /* align-items: center; */
-  color: white;
+  color: rgb(41, 41, 41);
   justify-content: space-around;
   text-align: center;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* height: 200px; */
-  background-color: black;
+  background-color: grey;
 }
 
-footer .footerWarrper #Contact {
+footer #Contact {
   margin-top: 20px;
-  color: rgb(185, 185, 185);
+
   font-size: 30px;
+  font-weight: lighter;
   width: 100%;
   flex: 1;
   /* align-self: center; */
   /* justify-self: center; */
+}
+
+footer .footerIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+footer .footerIcon a {
+  margin:0 30px 0 30px;
+}
+
+footer .footerIcon img {
+  width: 32px;
 }
 
 /* Responsive */
@@ -181,31 +238,46 @@ footer .footerWarrper #Contact {
     font-size: 15px;
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .navbar {
     display: none;
   }
 }
 /* Responsive for mobile */
-@media only screen and (max-width: 700px) {
-  #main {
-    height: 1400px;
-  }
+@media only screen and (max-width: 900px) {
   #main .intro {
     width: 88%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  #main .selfie {
+    order: 0;
+    margin-top: 90px;
+  }
   .introductionWarrper {
     text-align: center;
-    margin: 15px;
+    margin: 20px;
+    margin-bottom: 130px;
   }
   .introductionWarrper h1 {
     font-size: 40px;
   }
+  #projectSection {
+    width: 88%;
+  }
   #projectSection h1 {
     font-size: 40px;
+  }
+  #projectSection .project {
+    display: flex;
+    flex: 1;
+  }
+  #projectSection .project .project3{
+    border-right: 0;
+  }
+  #projectSection .project .project1{
+    border-right: 0;
   }
   .menu {
     display: none;
@@ -226,7 +298,7 @@ footer .footerWarrper #Contact {
 
 /* Links inside the navbar */
 .navbar a {
-  float: right;
+  /* float: right; */
   font-size: 16px;
   color: white;
   text-align: center;
@@ -253,6 +325,7 @@ footer .footerWarrper #Contact {
 }
 /* Dropdown content (hidden by default) */
 .dropdown-content {
+  /* float: right; */
   display: none;
   background-color: #f9f9f9;
   min-width: 150px;
@@ -262,7 +335,8 @@ footer .footerWarrper #Contact {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  /* font-family: Arial; */
+  font-family: Arial;
+  /* font-weight: lighter; */
   float: none;
   font-size: 30px;
   color: black;
@@ -289,13 +363,16 @@ footer .footerWarrper #Contact {
   display: inline-block;
   cursor: pointer;
 }
-
+.cross .dropdown-content {
+  display: block;
+  /* float:right; */
+}
 .bar1,
 .bar2,
 .bar3 {
   width: 30px;
   height: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.8);
   margin: 8px 10px;
   transition: 0.4s;
 }
@@ -316,7 +393,5 @@ footer .footerWarrper #Contact {
   -webkit-transform: rotate(45deg) translate(-9px, -9px);
   transform: rotate(45deg) translate(-9px, -9px);
 }
-.cross .dropdown-content {
-  display: block;
-}
+
 /* ***HAMBURGER ICON END*** */
