@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Shuang Zhou</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Navigation Bar -->
     <nav id="navigation">
-        <!-- Responsive nav bar -->
-        <div class="navbar">
-            <div id="dropdown" onclick="pressMenu(this)">
-                <div class="container">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#top">Home</a>
-                    <a href="#projectSection">Project</a>
-                    <a href="#footer">Me</a>
-                    <a href="./resume/Shuang_Zhou_Resume.pdf">Resume</a>
-                </div>
-            </div>
+      <!-- Responsive nav bar -->
+      <div class="navbar">
+        <div id="dropdown" onclick="pressMenu(this)">
+          <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="dropdown-content">
+            <a href="#top">Home</a>
+            <a href="#projectSection">Project</a>
+            <a href="#footer">Me</a>
+            <a href="./resume/Shuang_Zhou_Resume.pdf">Resume</a>
+          </div>
         </div>
-        <div id="logo">
-            <h1>DIAMONDKEN</h1>
-        </div>
-        <ul class="menu">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#projectSection">Project</a></li>
-            <li><a href="#footer">Me</a></li>
-            <li><a href="./resume/Shuang_Zhou_Resume.pdf">Resume</a></li>
-        </ul>
+      </div>
+      <div id="logo">
+        <h1>SHUANG ZHOU</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#projectSection">Project</a></li>
+        <li><a href="#footer">Me</a></li>
+        <li><a href="./resume/Shuang_Zhou_Resume.pdf">Resume</a></li>
+      </ul>
     </nav>
 
     <!-- Main Page -->
     <main id="main">
-        <header class="intro">
-            <img class="selfie" alt="Selfie" src="image/Shuang.jpg">
-            <div class="introductionWarrper">
-                <h1 class="myName">
-                    Shuang Zhou
-                </h1>
-                <p>
-                    Hi,I'm Shuang Zhou.<br>I am a Full-Stack Developer, <br>
-                    currently a Computer Science major student @UCR.
-                </p>
-<!--                 <p>
+      <header class="intro">
+        <img class="selfie" alt="Selfie" src="image/Shuang.jpg" />
+        <div class="introductionWarrper">
+          <h1 class="myName">
+            Shuang Zhou
+          </h1>
+          <p>
+            Hi,I'm Shuang Zhou.<br />I am a Full-Stack Developer, <br />
+            currently a Computer Science major student @UCR.
+          </p>
+          <!--                 <p>
                     Depressed Loser
                     <br>
                     Enthusiastic Believer
@@ -61,75 +66,91 @@
                     God's Lonely Programer
                     <br>
                 </p> -->
-            </div>
-        </header>
-        <div id="projectSection">
-            <h1>My Project</h1>
-            <div class="project">
-                <div class="project1">
-                    <h1>
-                        Placeholder
-                    </h1>
-                    <img class="projectImg" alt="project1" src="image/background.jpg">
-                    <p>
-                        Placeholder
-                    </p>
-                </div>
-                <div class="project2">
-                    <h1>
-                        Placeholder
-                    </h1>
-                    <img class="projectImg" alt="project2" src="image/background.jpg">
-                    <p>
-                        Placeholder
-                    </p>
-                </div>
-                <div class="project3">
-                    <h1>
-                        Placeholder
-                    </h1>
-                    <img class="projectImg" alt="project2" src="image/background.jpg">
-                    <p>
-                        Placeholder
-                    </p>
-                </div>
-                <div class="project4">
-                    <h1>
-                        Placeholder
-                    </h1>
-                    <img class="projectImg" alt="project2" src="image/background.jpg">
-                    <p>
-                        Placeholder
-                    </p>
-                </div>
-            </div>
         </div>
+      </header>
+      <div id="projectSection">
+        <h1>My Project</h1>
+        <div class="project">
+          <div class="project1">
+            <h1>
+              RShell
+            </h1>
+            <img class="projectImg" alt="project1" src="image/rshell.jpg" />
+            <p>
+              A Bash-like shell written in C++ <br />
+              <a href="https://github.com/DiamondKen/CS100-RShell">Source</a>
+            </p>
+          </div>
+          <div class="project2">
+            <h1>
+              Data Analysis Project
+            </h1>
+            <img
+              class="projectImg"
+              alt="project2"
+              src="image/DataProject.jpg"
+            />
+            <p>
+              A Team Project consist with collecting, cleaning data and peform
+              machine learning<br />
+              <a href="https://github.com/CS-UCR/cs105-prj-phase3-api"
+                >Source</a
+              >
+            </p>
+          </div>
+          <div class="project3">
+            <h1>
+              CoronaVirus Tracker WebApp
+            </h1>
+            <img
+              class="projectImg"
+              alt="project2"
+              src="image/CoronaVirus.png"
+            />
+            <p>
+              A simple live CoronaVirus Tracker<br />
+              <a href="https://github.com/DiamondKen/CoronaVirusTracker"
+                >Source</a
+              >
+            </p>
+          </div>
+          <div class="project4">
+            <h1>
+              Coming Soon..
+            </h1>
+            <img class="projectImg" alt="project2" src="image/background.jpg" />
+            <p>
+              Coming Soon..
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
 
     <footer id="footer">
-        <h1 id="Contact">
-            Contact Me
-        </h1>
-        <div class="footerIcon">
-            <a href="mailto:diamond_ken@hotmail.com">
-                <img alt="email" src="image/svg/baseline-email-24px.svg">
-            </a>
-            <a href="https://github.com/DiamondKen">
-                <img alt="github" src="image/GitHub-Mark-32px.png">
-            </a>
-            <a class="linkedin" href="https://www.linkedin.com/in/shuang-zhou-624515179/">
-                <img alt="linkedin" src="./image/LI-In-Bug.png">
-            </a>
-        </div>
-        <p class="copyright">
-            Copyright © 2019 Made By Shuang Zhou
-        </p>
+      <h1 id="Contact">
+        Contact Me
+      </h1>
+      <div class="footerIcon">
+        <a href="mailto:szhou061@ucr.edu">
+          <img alt="email" src="image/svg/baseline-email-24px.svg" />
+        </a>
+        <a href="https://github.com/DiamondKen">
+          <img alt="github" src="image/GitHub-Mark-32px.png" />
+        </a>
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/Shuang3Zhou/"
+        >
+          <img alt="linkedin" src="./image/LI-In-Bug.png" />
+        </a>
+      </div>
+      <p class="copyright">
+        Copyright © 2020 Made By Shuang Zhou
+      </p>
     </footer>
-</body>
-<script type="text/javascript" src="scripts/main.js">
-</script>
-<script src="jquery/jquery-3.4.1.js"></script>
-
+  </body>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </html>
